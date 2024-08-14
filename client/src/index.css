@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: gray;
+}
+
+#videoPlayer {
+  z-index: 100;
+}
+
+p {
+  font-size: small;
+  font-weight: 450;
+  line-height: normal;
+}
+
+.user_message_container .triangle {
+  border-left: 10px solid #a1ffbf;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 5px solid transparent;
+  transform: translateX(15px);
+}
+
+.bot_message_container .triangle {
+  transform: translateX(-18px);
+  border-right: 10px solid #a1deff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.user_message_container,
+.bot_message_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+  max-width: 83%;
+}
+
+.bot_message_container p {
+  white-space: pre-line;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #9ff2bf; */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 1px #ffffff;
+}
